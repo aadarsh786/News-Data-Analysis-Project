@@ -81,7 +81,7 @@ This project is designed to automate the ingestion of Walmart's sales and mercha
   
 * ### Google Cloud Platform
  
-    - #### BigQuery
+    - #### Snowflake
       
     -  #### Cloud Storage(GCS)
       
@@ -101,19 +101,6 @@ This project is designed to automate the ingestion of Walmart's sales and mercha
 <br>
 
 ## Dataset Used  :-
-### Merchant Dataset link -
-- https://github.com/aadarsh786/Walmart-Data-Ingestion-In-BigQuery-Project/blob/main/merchants_1.json
-- https://github.com/aadarsh786/Walmart-Data-Ingestion-In-BigQuery-Project/blob/main/merchants_2.json
-
-<br>
-
-### Sales Dataset link -
-- https://github.com/aadarsh786/Walmart-Data-Ingestion-In-BigQuery-Project/blob/main/walmart_sales_1.json
-- https://github.com/aadarsh786/Walmart-Data-Ingestion-In-BigQuery-Project/blob/main/walmart_sales_2.json
-
-
-
-
 
 
 
@@ -122,8 +109,11 @@ This project is designed to automate the ingestion of Walmart's sales and mercha
 <br>
 <br>
 
-## Python Script File  :-
-[AirFlow-BigQuery-Dag-File](practicepu.py)
+## Script Files  :-
+[Python-code-snippet](practicepu.py)
+ <br>
+ [Airflow-Dag-file](airflowjobprac.py)
+
   <br>
   <br>
 ## Resulted output :-
