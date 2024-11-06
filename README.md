@@ -114,26 +114,25 @@ Data warehouse that will eventually store and analyze the news data once it's tr
 <br>
 <br>
 
-## Dataset Used  :-
 
-
-
-
-<br>
-<br>
-<br>
 
 ## Script Files  :-
-* Python-File
+* <h3>Python-File:</h3>
 [Python-code-snippet](prac2.py)
  </br>
  </br>
- * Airflow-Dag : 
- [Airflow-Dag-file](airflowjobprac.py)
+ 
+ * <h3>Airflow-Dag : </h3>
+  [Airflow-Dag-file](airflowjobprac.py)
 
   </br>
   </br>
-## Resulted output :-
+  
+## Resulted output :-  
+ - <h3>Output_link_1 :</h3>  (https://github.com/aadarsh786/News-Data-Analysis-Project/blob/main/SNOWFLAKE_PROJECT_PARQUET_FILES_run_20241105064621.parquet)
+ - <h3>Output_link_2 :</h3>  (https://github.com/aadarsh786/News-Data-Analysis-Project/blob/main/SNOWFLAKE_PROJECT_PARQUET_FILES_run_20241105064940.parquet)
+
+
 
 
 
