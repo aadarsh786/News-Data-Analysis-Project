@@ -18,6 +18,23 @@ The project automates the process of fetching news articles related to Tesla fro
 
 ### PROJECT EXPLANATION :-  
 
+
+#### Data Fetching: 
+The pipeline retrieves recent news articles related to Tesla using the News API. Each article’s data, including author, title, source, timestamp, and content, is processed and stored in a DataFrame.
+
+#### Data Processing and Storage in GCS:
+
+After processing, the data is saved locally as a Parquet file.
+The file is then uploaded to a specified location in a Google Cloud Storage (GCS) bucket.
+
+#### Data Loading to Snowflake:
+
+In Snowflake, a destination table is created if it doesn’t already exist.
+The Parquet file from the GCS bucket is copied into this destination table for analysis.
+
+#### Airflow Orchestration:
+Airflow manages and schedules the pipeline, triggering data fetching, processing, storage, and loading operations daily.
+
   
   
   
@@ -117,20 +134,21 @@ Data warehouse that will eventually store and analyze the news data once it's tr
 
 
 ## Script Files  :-
-* <h3>Python-File:</h3>
-[Python-code-snippet](prac2.py)
+* <h3>Python-File:
+[Python-code-snippet](prac2.py) - Contains the core functions for fetching and processing data, and uploading it to GCS. </h3>
  </br>
  </br>
  
- * <h3>Airflow-Dag : </h3>
-  [Airflow-Dag-file](airflowjobprac.py)
+ * <h3>Airflow-Dag :
+  [Airflow-Dag-file](airflowjobprac.py) -  Defines the workflow and schedules the data pipeline tasks.  </h3>
+  
 
   </br>
   </br>
   
 ## Resulted output :- 
 
-<h3>Result in datetime format</h3>
+<h3>The output is stored in Parquet format with unique filenames that reflect the datetime of each run.</h3>
 
  - <h3>Output_link_1 :</h3>
   [Result1](https://github.com/aadarsh786/News-Data-Analysis-Project/blob/main/SNOWFLAKE_PROJECT_PARQUET_FILES_run_20241105064621.parquet)
